@@ -1,0 +1,9 @@
+Matthew Danielson
+7/6/16
+Questions for Assignment 6
+
+1) There will be a bunch of erros, as this code attempts to assign values within the struct definition, and then later attempts to assign values to said values - both of which are not legal actions.
+
+2) Enumerations deal exclusively with constants, and are useful in a situation where words such as JAN or FEB make a code more readable than simply just an array of increasing integers. Strucutres, on the other hand, are able to store many data types -precursor of OOD - and are very functional in any code that needs data storage that isn't strictly of one type in one location.
+
+3) When an array is passed directly to a function, it cannot be returned as its reference is being passed, and array is directly altered. However, when an array is passed within a structure, its values are passed instead and are altered locally, and are only changed if its structure is returned.
