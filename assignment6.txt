@@ -3,6 +3,6 @@ July 6, 2016
 
 Assignment 6: (still working on questions)
 
-1. The function will print: 
+1. The snippet of code will not function correctly because the struct is in main(). 
 2. Structures are collections of related variables under a single name. Enumerates define a set of named integer canstants starting from 0. 
 3. Passing an array directly to a function as an argument. Passing a structure containing an array causes the array to be copied to the function's parameter. 
