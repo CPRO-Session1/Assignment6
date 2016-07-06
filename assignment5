@@ -1,0 +1,90 @@
+1. How would you call the following function? Give an example of what it would look like written inside of the main() function and explain your code in detail.
+    int fxn(int a, float b, int c)
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+#include <stdio.h>
+
+int fxn(int a, float b, int c) {
+
+int n;
+        n = a*b*c;
+
+        return n;
+}
+
+void main() {
+
+int x, z;
+float y;
+
+        printf("Choose your dividend and two divisors:\n");
+        scanf("%d %f %d", &x, &y, &z);
+        printf("Your quotient is %d.\n", fxn(x, y, z));
+
+
+}
+
+This code divides dividend 'a' by divisor 'b' and once again by a 2nd divisor 'c'. In the main function, the values are scanned and the division function "fxn" is called.
+
+In this example, the calling of the function is being printed. 
+
+Even though the datatypes in the function's parameter differ from eachother, the actual calling of the function remains the same. (since we dont include datatypes when we call a function)
+
+The key difference is ensuring that the variables being passed to the function match the datatypes of the variables in the function's parameter list. You can see this being accomplished in the main
+function when y is declared as a float, scanned as a float, and passed into the function's variable b, which is a float. Each variable is scanned and passed in the same way with as its own datatype.
+
+
+
+
+2. Explain the difference between recursion and iteration. When/why is one preferable over the other? Why is recursion worse in other cases?
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+During an iterative loop, a variable is repeatedly reassigned a value until its value meets a certain condition, and some action is accomplished within each iteration of the loop.
+During a recursive loop, a function calls itself repeatedly, and for each repitition, stores a new value in a stack. The benefits of using recursion include more elegance and 
+simplicity of the code itself, which can make some algorithms easier to understand. The main downfall of recursion, however, is its memory-consumption and lack of efficiency. 
+
+One example where recursion might be better than iteration is when writing a program that prints the fibonacci sequence. 
+
+int i = 0;
+int fib[100];
+
+fib[0] = 1;
+fib[1] = 1;
+
+for (i = 2; i < 100; i++) {
+
+	fib[i] = fib[i-1]+fib[i-2];
+	}
+
+This program is cleaner, easier to understand, and more elegant than its iterative counterpart:
+
+        for (i=1; i<lim+1; i++)
+        {
+
+                next = first +second;
+                first = second;
+                second = next;
+        }
+
+The biggest and most commonly encountered downside to recursion is the fact that it consumes a lot of memory very quickly. Each recursive repetition stores a value in its own stack,
+so with enough repititions, the recursive loop can exceed the limit of memory and crash.
+
+
+
+
+
+3. How does a compiler work? Explain step by step.
+--------------------------------------------------
+
+The first stage of compilation is preprocessing, where the preprocessor reads statements starting with a # as preprocessor commands/preprocessor directives, which tell the preprocessor where
+the libraries included in the code are stored. the preprocessing stage is also the point where comments (lines after // or in between /* and *\) are discarded.
+
+The second stage is called compilation, where the code is translated into assembly instructions. This is when a .s file is produced, which consists of a human readable language that can be 
+processed by different assemblers.
+
+The third stage is called assembly. At this point, assembly instructions are translated into machine code that directly manipulates the processor/memory. A .o file is created, containing 
+object code in binary form.
+
+The fourth and final stage is the 'linking' stage. Up until this point, parts of the code that rely on precompiled libraries were marked as undefined. This is the stage where those parts are
+linked to their respective libraries. Only when this is completed can an executable file be created.
+
