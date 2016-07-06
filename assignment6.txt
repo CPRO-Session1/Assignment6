@@ -1,0 +1,14 @@
+ Emma Ladouceur
+
+
+ 1. This code will print
+
+ 203	1	23
+
+ because the specific emp1 overrides the initial values set for the employee struct. 
+
+
+ 2. enumerations are simply words used for numbers. So for an enumeration of months those words really just stand for numbers 0-11, but a struct can have many values. Each thing doesn't stand for a number and you can get the value of the stuct to print or return not just it's numbered position. 
+
+
+ 3. I'm not really sure but I think that to pass an array into a function you might have to go through a loop to print each value, or you need to look for a specific space in that array, but for a structure it depends of if you're looking for all of the values of the structure or just the array in which case you can loop through for just that piece of the structure. 
