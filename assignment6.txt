@@ -1,0 +1,4 @@
+Jack Rosen
+1. The program will have an error because you cannot declare a struct insidethe main() class.
+2. Structures can have different variable types to store while enumerations store integers but use the variable name. A structure would work for banks who need to hold a name, bank number, and balance in the same place. Enumerations work if you want to find out the months of the year because they all have the correct number set to them.
+3. When you pass a structure with an array, the value of the array does not change in the structure, only in the thing you are passing to. When you pass an array, the value of the array changes in the function and wherever else it is.
