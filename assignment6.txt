@@ -1,0 +1,11 @@
+Olivier Gabison
+
+1. It will print:
+203 1 23
+
+2. Structures allow you to group variables and mixed data types together in a single
+unit. Enums is a data type where every possible value is defined as a symbolic constant.
+You would use structures when making a bank account, and enums when defining the days of the week.
+
+3. Passing an array directly to an array causes pass by value. While passing a structure containing an array
+causes that object, including the array, to be copied into the function's parameter.
