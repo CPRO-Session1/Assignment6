@@ -1,0 +1,7 @@
+Sean Kee
+
+1. First, the code wouldn't even compile because you did not include the necessary header files. However, if you did, it would print 203, 1, 23.
+
+2. Compared to enums, structers allow for easy storage and access of multiple variables/data types. Enums is sort of like an inverted array, and can only store one data type. Enums are useful if you want to be able to refer to an "array" by words, rather than numbers. Structures are useful when you want to have sort of a set "format" for a certain thing.
+
+3. The difference between passing an array directly into a function means it isn't being copied. That means whatever changes are made to the array in the function affects the original array. However, structures get passed as values, which means if an array is inside the structure, it gets copied over. Whatever happens to the structured array in the function doesnt affect the original array unless it is returned back through the structure.
