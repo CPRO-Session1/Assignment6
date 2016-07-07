@@ -1,0 +1,11 @@
+1:
+It will print out a list of numbers: 203, 1, 23.
+It stores the numbers originally in the data structure as 8,1,7, but it updates the set of numbers to their value that shows when it prints.
+
+2:
+Structures are a way of storing large numbers in memory and accessing them easily, especially if they involve different data types, which differentiates them from arrays.
+Emunerators just make indexing lists easier because they assign each space in an array with an interger that can be called and printed more easily.
+
+3:
+When you pass an array, it can only deal with the types of data that are used in that specific array, and cannot access other data types.
+When you pass a data structure however, it allows you to deal with all types of data that are stored in the data structure, which can be basically any data type.
