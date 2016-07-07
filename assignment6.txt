@@ -1,0 +1,4 @@
+Lloyd Page
+1. Errors due to missing libraries, but assuming these are included, there is still the error of having initialized within a struct. Assuming that this error is resolved, we would see an output of 203	1	23
+1. Enumerations are an advanced data type in which many variables are stored with increasing ints, starting at zero if not specified. Structures are an advanced data type in which many variables may be stored of different data types, including arrays. Example for eneumeration: Boolean data type. Example for a structure: When you want to pass by reference an array.
+2. Passing an array directly to function passes it by reference, passing it in a structure passes it by value. This difference means that if you don't want to edit the array outside the function, you would want to pass it in through the function
