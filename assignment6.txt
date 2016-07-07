@@ -1,0 +1,5 @@
+1) It won't compile, as it throws an error if you assign a value to a field in a struct. Also, it calls printf without importing stdio, and clrscr and getch without importing conio.h, which is exclusive to windows. 
+
+2) One would use a structure when they need to store data that requires lots of variables, whereas one would use enums to make a list of things of a fixed size, where the important value isn't the value of the variable, but its name.
+
+3) Arrays are usually passed by reference to functions, because they are really just pointers in disguise. Structs are passed by value, so wrapping an array in a struct would allow it to be passed by value rather than reference.
