@@ -1,0 +1,5 @@
+1. The output will be 203 1 23 because the other integers will be invalid.
+
+1. structure and enumeration are two different data types. Structure can store every types of variables while enumeration can only store integers. Enumeration is mostly used to define terms while structure actually assigns specific values.
+
+2. The difference is that: if the array is passed directly, the value of the array will be changeable while if the array is passed through a structure, the value will not be changeable anywhere other than the target location.
