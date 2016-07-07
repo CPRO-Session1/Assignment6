@@ -1,5 +1,5 @@
 /*Sean Kee*/
-/*Banking using structures*/
+/*Banking using structures v1.0.12*/
 #include <stdio.h>
 #include <string.h>
 int a = 0; //Global Account Counter
