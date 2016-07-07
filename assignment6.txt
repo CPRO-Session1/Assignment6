@@ -1,0 +1,9 @@
+Yael Kelmer.
+
+1. Assuming that the library conio.h is present at the top of the file this is what the code will output:
+It will clear the screen, then print: 203	1	23, and then wait for the user to type some character in order to exit the program, but the character will not appear on the screen.
+
+2. Structures and enumerations are similar in that they are both abstractions to store information. However, enumerations can only store integers while structures can store strings, integers, floats, and other data types. You can use a structure to store students' names, their ages, and their avergaes. You can use an enumeration to store only the names of the students. 
+
+3. When you pass a structure containing an array, you pass by value, meaning you make a copy of the array and pass it along. When you pass an array directly to a function, you pass by reference, meaning you take that copy of the array and pass it along. 
+
