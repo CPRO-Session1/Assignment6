@@ -11,27 +11,28 @@ typedef struct bankAccount{
 } account;
 
 void title() {
+		printf("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
 		printf("\n^-------------^\n");
 		printf("T KEE BANKING T\n");
 		printf("I_@**_***_**@_I\n\n\n\n");
 }
 
 void accountStatus(account acc) {
-	char y;
 	title();
 	printf("ACCOUNT STATUS\n");
 	printf("**************\n\n");
 	printf("Name: %s\n", acc.name);
 	printf("Account Number: %1d\n", acc.number);
 	printf("Current Balance: $%.02f\n", acc.balance);
-	printf("\n\nPress y to Return.");
-	scanf("%c", &y);
+	printf("\n\nPress Enter to Return.");
+	getchar();
 }
 
 account accountCreate(account acc) {
 	printf("ACCOUNT CREATION\n");
 	printf("****************\n\n");
 	printf("What is your name?\n#: ");	
+	getchar();
 	fgets(acc.name, sizeof(acc.name), stdin);
 	acc.number = a;
 	acc.balance = 0;
@@ -52,6 +53,7 @@ account withdraw(account acc) {
 	if (amount > acc.balance) {
 		printf("\nSorry, you do not have enough funds to withdraw $%0.2f\n", amount);
 		printf("\nRetry? [y/n]\n#: ");
+		getchar();
 		scanf("%c", &retry);
 		if (retry == 'y' || retry == 'Y')
 			withdraw(acc);
@@ -62,7 +64,9 @@ account withdraw(account acc) {
 		acc.balance -= amount;
 		printf("You have successfully withdrawn $%.02f from your account.\n\n", amount);
 		printf("Would you like to check your new status? [y/n]\n#: ");
+		getchar();
 		scanf("%c", &status);
+		getchar();
 		if (status == 'y' || status == 'Y') {
 			accountStatus(acc);
 			return acc;
@@ -86,6 +90,7 @@ account deposit(account acc) {
 	printf("Would you like to check your new status? [y/n]\n#: ");
 	getchar();
 	scanf("%c", &status);
+	getchar();
 	if (status == 'y' || status == 'Y') {
 		accountStatus(acc);
 		return acc;
@@ -118,7 +123,7 @@ void mainMenu(account acc[]) {
 				}
 				break;
 			case 2:
-				accountCreate(acc[a]);
+				acc[a] = accountCreate(acc[a]);
 				a++;
 				menu = 1;
 				break;
@@ -129,18 +134,21 @@ void mainMenu(account acc[]) {
 					break;
 					}
 				else {
+					printf("Hello %s", acc[account].name);
 					printf("What action would you like to perform?\n\n1: Witdraw\n2: Deposit\n3: Check Balance\n4: Return\n#: ");
 					scanf("%d", &option);
-	
+					getchar();	
 					switch(option) {
 						case 1: //Withdraw
-							withdraw(acc[account]);
+							acc[account] = withdraw(acc[account]);
 							break;
 						case 2: //Deposit
-							deposit(acc[account]);
+							acc[account] = deposit(acc[account]);
 							break;
 						case 3: //Status Check
 							printf("Your current balance is: $%.02f", acc[account].balance);
+							printf("\nPress Enter to Return.");
+							getchar();
 							break;
 						case 4:
 							menu = 1;
