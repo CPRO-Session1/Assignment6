@@ -1,0 +1,9 @@
+//Anya Lauria
+
+1. You cannot initialize those variables in the structure that way, but when I deleted that part, the program seemed to
+   compile and execute correctly...though I thought you could not declare structures inside the main function. 
+2. Strucutes have fields and records and can have multiple data types stored in them. Enumerations store integers 
+   under a name. A structure can hold, lets say, a record of medical patients, that stores their names, illnesses, 
+   medical information like blood type etc. 
+3. If you pass an array contained within a structure, any modifications in it will not change the original array. 
+   If you pass an array directly, modifications to it will change the original array. 
