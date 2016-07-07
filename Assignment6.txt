@@ -1,0 +1,13 @@
+Clarke Littlejohn
+This mist likely has a lot of typos as i was extremely tried when doing this.
+
+1) if i recall correctly it shouldnt print anything as the unassigned int have a special % thing
+but if that is not it then it print out the 8 1 7 as those are predefined. but i would think it would crash.
+
+2)structes and enum are similiar at all really. enums from what i know seem goot for calendars and thats it 
+where structures are seem very similiar to objects in java or c++ which makes them much more useful. enums to me seems pointless it like an
+array but instead f x[0] you can call it by a name.
+
+3)passing an array directly passes it by reference so it makes so that it it can changed wuth un that function and the chnages will stay
+whereas the a struct that has an array and that is being passed is passed by value. Si a copied is made and any changes that are made are
+done in the original array.
