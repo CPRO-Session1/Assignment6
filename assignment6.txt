@@ -1,0 +1,7 @@
+//Bettina Benitez
+
+1. It will be an error. This is because the struct is inside the main when functions should be written outside the main and only called in.
+
+2. While structs and enums both store variables, enums are for more constant variables and structs are for more flexible chaning amounts. Structs: e.g. bank balances, numbers, etc. Enums: Calendars, 7 dwarfs,etc.
+
+3. Passing an array directly to a function is passing the array by reference (which is local to the function) while passing a structure containing an array is passing by value (to modify the original memory location)
