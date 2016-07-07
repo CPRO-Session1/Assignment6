@@ -1,0 +1,34 @@
+1. What will be output of following C code? Explain your answer.
+int main() {
+	struct employee
+	{
+		unsigned int id = 8;
+		unsigned int sex = 1;
+		unsigned int age = 7;
+	};
+	struct employee emp1={203,1,23};
+	clrscr();
+	printf("%d\t%d\t%d",emp1.id,emp1.sex,emp1.age);
+	getch();
+}
+	The output would either be an error. Structures must be declared outside the main statement.
+	Since it isn't here, the rest of the code calling upon the structure would just come up
+	with errors.
+2. How are structures and enumerations similar and different? Give an example of when you would
+use each.
+	Structures and enumerations are both similar in that they can hold many different values
+	in one package(This is probably the wrong word for that). They're different in that a
+	structure can hold multiple different variables and/or different vairable types, whereas
+	enums are more like symbols for auto-set values. An example for enums is for the monthes
+	of the year and assigning each of them their corresponding value (January is 1, February
+	is 2, etc). Structures to me seem to have a much wider use and are used to store lots
+	of related data for a specific person/thing.
+3. Explain the difference between passing an array directly to a function versus passing
+a structure containing an array? 
+	Normally an array is pass-by reference, meaning when is used in a function, a new reference
+	to the existing array is created rather than a new identical array. An array within a
+	structure, however, can be passed by value, or more accurately called by value. When
+	you have an array within a structure, and then pass that structure to a function,
+	the array is copied as it would be if it were pass by value.
+
+
