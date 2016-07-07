@@ -1,0 +1,11 @@
+Julia Tan
+assignment6.txt
+
+1. segmental error because struct is inside int main()
+2. structures can hold many variables of different types, while enumerations can only hold int values that represent integers in ascending order. You can use enumerations as numbers and do operations on them. They are designed for variables containing a limited set of values, as it defines a set of named integer constants, starting from 0;
+
+Structures would be useful for building a database with different types. Enums would be useful for defining the months of the year into numbers.
+
+3. When passing an array directly, the values in the array can change so that the array will have the same value from wherever it is accessed in the program. When passing a structure containing an array, if the values in this array are changed, they are changed only within the function it has been passed to.
+
+
