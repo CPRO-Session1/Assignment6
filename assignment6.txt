@@ -1,0 +1,7 @@
+Aly Milich
+
+1. Structures need to be declared before the main so you will get an error if you try to declare struct inside the main.
+
+2. Structures are used to store different variable types under one common structure. You could use these to store different data about a student which could include their gender (char), name (string), and age (int). Enumerations assign variable names to stored integers which could be useful in storing the months for example because then the name of the month and its corresponding number would match up.
+
+3. Passing an array directly versus passing a structure containing an array is the difference between passing by value and calling by value. In the former, the array is only changed inside the function whereas in the latter, the values of the array are changed until the program terminates.
