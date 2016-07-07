@@ -1,0 +1,28 @@
+Assignment 6 Sheqi Zhang
+
+1.  What will be output of following C code?  Explain your answer.
+  
+``` C
+int main() {
+  struct employee
+  {
+    unsigned int id = 8;
+    unsigned int sex = 1;
+    unsigned int age = 7;
+  };
+  struct employee emp1={203,1,23};
+  clrscr();
+  printf("%d\t%d\t%d",emp1.id,emp1.sex,emp1.age);
+  getch();
+}
+```
+Answer:
+It just print out the id, sex and age for emp1.
+
+2. How are structures and enumerations similar and different? Give an example of when you would use each.
+Answer:
+Structure is a group of variables with different datatypes, while enumeration is a data type where every possible value is defined as a symbolic constant. Structure is just the combination of some varibales, while the format of enumeration will automatically change the value of some variables in it. The similarity is that they all handle some variables.I can see structure when I have to define an individual with several different data types, like defining the bank account. I can see enum when expressing the months.
+
+3. Explain the difference between passing an array directly to a function versus passing a structure containing an array? 
+Answer:
+If a array is passing to a function contained in a function, it is passed by value. However, if a array is directly passing to a function, it is passing by reference.
