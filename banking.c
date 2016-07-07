@@ -22,21 +22,21 @@ int main(){
 	a2.balance = 0;
 
 //Deposit part:
-	printf("How much money do you want to deposit into the %s account? Amount of money in account: %d\n", a1.name, a1.balance);
+	printf("How much money do you want to deposit into the %s\t account? Amount of money in account: %d\n", a1.name, a1.balance);
 	scanf("%d", &i);
 	a1.balance = a1.balance + i;
 
-	printf("How much money do you want to deposit into the %s account? Amount of money in account: %d\n", a2.name, a2.balance);
+	printf("How much money do you want to deposit into the %s\t account? Amount of money in account: %d\n", a2.name, a2.balance);
 	scanf("%d", &i);
 	a2.balance = a2.balance + i;
 
 
 //Withdrawal part:
-	printf("How much money do you want to withdraw into the %s account? Amount of money in account: %d\n", a1.name, a1.balance);
+	printf("How much money do you want to withdraw into the %s\t account? Amount of money in account: %d\n", a1.name, a1.balance);
 	scanf("%d", &i);
 	a1.balance = a1.balance - i;
 
-	printf("How much money do you want to withdraw from the %s account? Amount of money in account: %d\n", a2.name, a2.balance);
+	printf("How much money do you want to withdraw from the %s\t account? Amount of money in account: %d\n", a2.name, a2.balance);
 	scanf("%d", &i);
 	a2.balance = a2.balance - i;
 
@@ -44,7 +44,7 @@ int main(){
 	printf("\n");
 
 	printf("Your Receipt: \n");
-	printf("You have %d amount of money in your %s account \n", a1.balance, a1.name); 
+	printf("You have %d dollars in your %s\t account \n", a1.balance, a1.name); 
 	printf("You have %d dollars in your %s\t account \n", a2.balance, a2.name); 
 
 	return 0;
