@@ -106,7 +106,7 @@ switch(z){
 //statements, and the third switch statement will be deleted. 
 //I am a little uncertain on how to incorporate the nuances of using operations on i in the code, but I will update
 //the code soon. 
-
+//Or perhaps I should print them as a.real + a.imagi? I'm not sure 
 printf("\nThe real part is %d and the imaginary part is %di\n", a.real, a.imag);
 printf("Combined, they are %di\n", zz); 
 
