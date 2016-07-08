@@ -1,0 +1,71 @@
+1. What will be output of following C code? Explain your answer.
+----------------------------------------------------------------
+
+int main() {
+  struct employee
+  {
+    unsigned int id = 8;
+    unsigned int sex = 1;
+    unsigned int age = 7;
+  };
+  struct employee emp1={203,1,23};
+  clrscr();
+  printf("%d\t%d\t%d",emp1.id,emp1.sex,emp1.age);
+  getch();
+}
+
+This code will not function because you are initializing values within the structure and then trying to, once again, assign values
+to the structure later on. With structures, values must be given to members of the structure. 
+When you initialize values in a structure in C, the compiler cannot see the member created by the line
+struct employee emp1={201,1,23};
+To fix this issue, take out the values you are assigning to int id, int sex, and int age in the structure. If you still want these
+values, assign them to an additional member of the structure.
+
+2. How are structures and enumerations similar and different? Give an example of when you would use each.
+------------------------------------------------------------------------------------------------------
+
+Structures and enumeratons are similar in the sense that they both store data within them, but their methods of doing this differ
+greatly. Thus, their practical uses differ as well. Structures can store variables of many different data types. Structures store 
+a set of variables for many different "members". Structures can be thought of as "multi-dimensional" in this way, since there are 
+several different variables stored for each individual member. Enumerations differ greatly in the way they store data. An 
+enumeration, or "enumerated type", stores 1 set of values that are all defined as constants. They are more similar to single-
+dimensional arrays than they are to structures. Enumerations cannot store members, only a single set of constants. Also, 
+enumerations can be stored in structures, but structures cannot be stored in enumerations.
+
+An example of a practical use of an enumerated type would be to create an enumeration that sets the value 0 to "false", and 1 to
+"true". Making the program more easily understood by anyone reading the code
+example:
+enum Boolean
+        {
+          false,
+          true
+        };
+
+because of the inherent ordering of values in an enum type, false, being the first value, is set to 0, and true is set to 1.
+Now the programmer can use the word "false" in lieu of 0 and "true" in lieu of 1.
+
+An example of a practical use of a data structure would be to create a database of members of an online group, who all have their own
+information stored in their respective members of the structure
+
+struct group{
+
+	char username[100];
+	char password[100];
+	int age;
+	int PIN number;
+};
+
+	user 001={"coolguy1994", "password123", 67, 3894};
+	user 002={"Bob32", "badpasswordexample", 23, 4524};
+	user 001={"genericusernameexample", "worsepwexample", 23, 3743};
+	user 001={"thomas", "tomspassword", 107, 6664};
+
+Explain the difference between passing an array directly to a function versus passing a structure containing an array?
+----------------------------------------------------------------------------------------------------------------------
+
+The biggest practical difference in passing an array versus passing a struct containing an array is that passing only an array
+to a function passes it by reference, meaning an alias of the value of the array is passed, and as the function changes the element 
+in the array, this change is applied to the original array. Passing structures, however, is done using "pass by value" meaning a
+copy of the value is passed to the function, and so any changes applied to this copy do not affect the original data structure.
+
+
