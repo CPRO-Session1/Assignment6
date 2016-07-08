@@ -1,0 +1,28 @@
+
+    1. What will be output of following C code? Explain your answer.
+
+int main() {
+  struct employee
+  {
+    unsigned int id = 8;
+    unsigned int sex = 1;
+    unsigned int age = 7;
+  };
+  struct employee emp1={203,1,23};
+  clrscr();
+  printf("%d\t%d\t%d",emp1.id,emp1.sex,emp1.age);
+  getch();
+}
+	The output of this code will print employee 1's id as 203, his sex as 1, and his age as 23.
+
+    2. How are structures and enumerations similar and different? Give an example of when you would use each.
+
+	Structures and enumerations are similar in that they let you define new data types. However, structures use all the memory of its members.
+	A structure has a separate memory location for each of its elements and they can all be used at once. 
+	Enumerations, on the other hand, are types of data where every possible value is defined as a symbolic constant.
+	Enumerations do not have members. Structures do not define lists of constants. A structure can contain enumerations, but an enumeration cannot contain structures. 
+	Enumerations help in writing clear code and simplify programming whereas structures can be more complex. 
+
+    3. Explain the difference between passing an array directly to a function versus passing a structure containing an array?
+	Passing an array directly to a function passes the array to the function by reference meaning anything in the function that changes the array changes it permanently.
+	Passing a structure containing an array changes it by value. It makes a copy of all the values in the array so that whenever a value changes, it doesn't change the values of the original.
