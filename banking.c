@@ -12,7 +12,9 @@ typedef struct bankAccount{
 
 void title() { /*Prints Header*/
 		printf("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
-		printf("\n^-------------^\n");
+		printf("       _       \n");
+		printf("    _-*V*-_    \n");
+		printf("^--^I*o^o*I^--^\n");
 		printf("T KEE BANKING T\n");
 		printf("I_@**_***_**@_I\n\n\n\n");
 }
@@ -159,6 +161,8 @@ void mainMenu(account acc[]) { /*Menu System*/
 					}
 					break;
 				}
+			default:
+				account = -1;
 
 		}
 
@@ -167,6 +171,7 @@ void mainMenu(account acc[]) { /*Menu System*/
 
 void initialize() {
 	int n;
+	title();
 	printf("\nADMINISTRATION\n");
 	printf("**************\n");
 	printf("Input number of total accounts #: "); /*Prompts the user before the bank function starts to input the allowed amount bank acounts*/
